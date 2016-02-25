@@ -37,7 +37,86 @@ end
 if file.exist?('favored_spot.html')
     Generate_blog.new.new_entry()
 else
-    puts "File not found."
+    spotHtml = File.new("favored_spot.html", "w")
+    sContent =" <!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>JP's Resume</title>
+  
+   <style>
+       body
+       {
+             background-color:gray;
+             line-height: 20px;
+             font-family: \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif;
+       }
+    
+       ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+    overflow: hidden;
+    background-color: Black;
+}
+h1, h2, h3, h4, h5, h6{ margin-top:20px;
+                          margin-bottom:1px;
+       }
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #666;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+       .container {
+           background-color:#666666;
+           margin-top:50px;
+           margin-bottom:30px;
+           margin-left:30px;
+           margin-right:30px;
+           width:100%;
+           padding:10px; 
+           box-shadow:2px 1px 3px 3px inset;
+           
+       }
+       nav {
+            display:inline;
+            line-height:10px;
+            background-color:black;
+            height:8px;
+            width:100%;
+            float:left;
+            padding:5px; 
+}
+   </style>
+     </head>
+    <body>
+        <h2><font color=black>John-Paul Sprouse</h2>
+        
+        
+        <nav><font color=Black>
+            <li><a href=\"/index.html\">Home </a></li>
+            <li><a href=\"/projects.html\">Projects  </a> </li>
+            <li><a href=\"/resume.html\">Resume  </a> </li>
+             <li><a href=\"/about.html\">About</a></li>
+       </nav>
+       "
+spotHtml.write(sContent)
+spotHtml.close()
+Generate_blog.new.new_entry()
 end
 
 end
