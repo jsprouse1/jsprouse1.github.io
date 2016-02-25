@@ -37,7 +37,7 @@ end
 if file.exist?('favored_spot.html')
     Generate_blog.new.new_entry()
 else
-
+    puts "File not found."
 end
 
 end
