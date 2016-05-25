@@ -57,3 +57,7 @@ nav {
     padding: 10px;
     box-shadow: 2px 1px 3px 3px inset;
 }
+
+.vert {
+    float: right;
+}
