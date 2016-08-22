@@ -47,6 +47,15 @@ table, th, td {
     border: 1px solid grey;
 }
 
+.downlist { 
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 10;
+    margin-right: 10;
+    padding-left: 40px;
+}
 .active {
     background-color: #4CAF50;
 }
