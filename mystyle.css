@@ -43,6 +43,10 @@ nav {
     padding: 5px;
 }
 
+table, th, td {
+    border: 1px solid grey;
+}
+
 .active {
     background-color: #4CAF50;
 }
@@ -61,3 +65,4 @@ nav {
 .vert {
     float: right;
 }
+
