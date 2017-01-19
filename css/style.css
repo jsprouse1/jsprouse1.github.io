@@ -754,3 +754,11 @@ header .intro-text {
 	padding: 10px 100px 20px 20px;
 }
 }
+
+.navbar-toggle {
+  color: #888; /* @navbar-default-toggle-icon-bar-bg */
+}
+
+.navbar-inverse .navbar-toggle {
+  color: #fff; /* @navbar-inverse-toggle-icon-bar-bg */
+}
